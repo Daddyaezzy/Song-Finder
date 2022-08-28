@@ -1,0 +1,86 @@
+*{
+  /* padding: 0; */
+  margin: 0;
+}
+body {
+  display: grid;  
+  text-align: center; 
+  /* padding: 10px;  */
+  font-size: 1.2em;
+}
+header h1{
+  color: rgb(144, 217, 215);
+  padding-bottom: 10px;
+  
+}
+
+button{
+  background: rgb(144, 217, 215);
+  border: 1px solid rgb(144, 217, 215);
+  border-radius: 20px;
+  padding: 8px;
+}
+
+button:hover{
+  background-color: white;
+  /* transition: 0.8s; */
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+article{
+  padding: 20px;
+}
+
+header{
+  color: white;
+  background: rgb(8, 53, 90);
+  padding: 3%;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  min-height: 800px;
+  background: rgb(144, 217, 215);
+  padding: 20px;
+  padding-top: 250px;
+  
+}
+
+hr {
+  margin: 1.2em 0;
+}
+
+input, button {
+  font-size: 1.2rem;
+}
+
+input {
+  width: 40%;
+  margin: 0 20px;
+}
+
+
+@media(max-width: 450px){
+  main{
+    display: block;
+  }
+
+  header{
+    /* padding: 4%; */
+    display: block;
+  }
+  header input{
+    /* font-size: 8px; */
+    margin-top: 18px;
+  }
+
+}
+
+
